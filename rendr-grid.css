@@ -1,0 +1,103 @@
+/* Global
+========================================== */
+
+.grid-container{
+	padding-left: 10px;
+	padding-right: 10px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+img {
+	width: 100%;
+}
+
+
+/* Media Queries
+========================================== */
+
+@media (min-width: 1px) and (max-width: 767px) {
+	.grid-container > [class^="col-"]{
+		padding-top: 5px;
+		padding-bottom: 5px;
+	}
+	.hide-mobile{
+		diplay: none;
+	}
+}
+
+@media (min-width: 768px){
+
+	/* columns
+	========================================== */
+	.grid-container >  [class^="col-"] 
+	{
+		float: left;
+		min-height: 1px;
+		padding-left: 10px;
+		padding-right: 10px;
+		margin-left: 2%;
+
+	}
+	.grid-container >  [class^="col-"]:first-child{
+		margin-left: 0;
+	} 
+	.grid-container >  [class^="col-"]:last-child{
+		float: right;
+}
+	/* Columns are 65px wide, with 20px gutters
+	========================================== */
+	
+	.col-1{
+		width: 6.5%;
+	}
+	.col-2{
+		width: 15%;
+	}
+	.col-3{
+		width: 23.5%;
+	}
+	.col-4{
+		width: 32%;
+	}
+	.col-5{
+		width: 40.5%;
+	}
+	.col-6{
+		width: 49%;
+	}
+	.col-7{
+		width: 57.5%;
+
+	}
+	.col-8{
+		width: 66%;
+	}
+	.col-9{
+		width: 74.5%;
+	}
+	.col-10{
+		width: 83%;
+	}
+	.col-11{
+		width: 91.5%;
+	}
+	.col-12{
+		width: 100%;
+	}
+
+	/* Clearfix
+	========================================== */
+	
+	.clearfix:after,.grid-container:after{
+		content: " ";
+		display: table;
+		clear: both;
+	}
+}
+
+@media (min-width: 1200px){
+	.grid-container{
+		max-width: 1100px;
+	}
+}
